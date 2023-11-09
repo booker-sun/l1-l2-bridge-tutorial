@@ -67,6 +67,7 @@ const main = async () => {
     oNFT_SYMBOL,
     oNFT_BASE_TOKEN_URI,
   )
+
   const receipt1 = await tx1.wait()
   const l1onft = await hre.ethers.getContractAt(
     'L1StandardERC721',
